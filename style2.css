@@ -1,0 +1,144 @@
+@font-face {
+    font-family: ErmBld;
+    src: url("fonts/Ermilov-bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+:root {
+    --link-color: #34748e;
+    --active: #7b7077;
+    --greyed: #aca4a9;
+    --purple: #df72b7;
+    --slate-blue: #7d53de;
+    --ocean-green: #59c9a5;
+    --fire-opal: #db5a42;
+}
+
+@keyframes animation-t {
+    0% {
+        color: var(--purple);
+    }
+    25% {
+        color: var(--slate-blue);
+    }
+    50% {
+        color: var(--ocean-green);
+    }
+    75% {
+        color: var(--fire-opal);
+    }
+    100% {
+        color: var(--purple);
+    }
+}
+
+
+body {
+    background-color: #eeeeee;
+    width: 100vw;
+    height: 100vh;
+}
+
+div {
+    display: block;
+}
+
+.noDeco {
+    text-decoration: none;
+}
+
+ /* body {
+    width: 100%;
+    background: linear-gradient(-45deg, #AD66D5, #98ABF8, #b9d5fd, #BED8FA);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+} */
+
+.grd {
+    animation: animation-t 15s ease infinite;
+}
+.server{
+    color: #005577;
+}
+
+@media (min-width: 700px) {
+    .first {
+        display: flex;
+        font-family: "Inconsolata",sans-serif;
+        align-items: center;
+        padding-left: 100px;
+        padding-top: 100px;
+        width: 100%;
+    }
+    
+    .firstImg {
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+    }
+    
+    .firstText {
+        text-decoration: none !important;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+
+    .firstText2 {
+        padding-left: 10px;
+        text-decoration: underline;
+        color: #7b7077;
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 3em;
+        display: block;
+        font-weight: bold;
+        }
+
+    h2 {
+        padding-left: 100px;
+        padding-top: 40px;
+        font-family: ErmBld;
+        font-weight: lighter;
+    }
+    .second {
+        font-family: "Inconsolata",sans-serif;
+        padding-left: 100px;
+    }
+
+    .info {
+        font-size: 115%;
+        font-weight: normal;
+        padding-left: 100px;
+        line-height: 1.8;
+        font-family: "Inconsolata",sans-serif;
+    }
+    
+    .test {
+        margin-bottom: 18px;
+    }
+    
+    .soc {
+        padding-left: 10px;
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+        width: 44px;
+        height: 29px;
+    }
+}
