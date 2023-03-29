@@ -135,7 +135,7 @@ div {
         text-decoration: none;
         font-size: 1.5em;
         width: 44px;
-        height: 29px;
+        height: 44px;
     }
     
     .socBlock {
@@ -201,5 +201,20 @@ div {
         display: inline;
         margin-top: 4em;
         padding-left: 5.3em;
+    }
+    .sorry{opacity: 0;}
+}
+
+
+
+@media (max-width: 840px) {
+    div{ opacity: 0;}
+    .sorry {opacity: 100;}
+
+    .sorry {
+        padding-left: 100px;
+        padding-top: 40px;
+        font-family: ErmBld;
+        font-weight: lighter;
     }
 }
